@@ -1,0 +1,161 @@
+timestamp=[2024-08-02 15:15:36], mode=WORKBENCH_START, duration=0:00:05.108, duration_ms=5108, data={}
+timestamp=[2024-08-02 15:15:37], mode=WORKBENCH_UI_INIT, duration=0:00:00.433, duration_ms=433, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-08-02 15:15:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.061, duration_ms=61, data={}
+timestamp=[2024-08-02 15:16:57], mode=APP_CREATION, duration=0:00:04.499, duration_ms=4499, data={name=lab6EC, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=mb_usb_hdmi_top, application_type=application}
+timestamp=[2024-08-02 15:21:06], mode=PLATFORM_GENERATION, duration=0:00:06.223, duration_ms=6223, data={name=mb_usb_hdmi_top}
+timestamp=[2024-08-02 15:21:09], mode=BUILD, duration=0:00:02.755, duration_ms=2755, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:23:56], mode=PLATFORM_GENERATION, duration=0:00:02.059, duration_ms=2059, data={name=mb_usb_hdmi_top}
+timestamp=[2024-08-02 15:25:01], mode=BUILD, duration=0:00:00.706, duration_ms=706, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:25:44], mode=BUILD, duration=0:00:00.633, duration_ms=633, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:26:40], mode=PLATFORM_GENERATION, duration=0:00:02.005, duration_ms=2005, data={name=mb_usb_hdmi_top}
+timestamp=[2024-08-02 15:26:41], mode=BUILD, duration=0:00:00.931, duration_ms=931, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:29:00], mode=BUILD, duration=0:00:00.140, duration_ms=140, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:29:52], mode=BUILD, duration=0:00:00.684, duration_ms=684, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:33:42], mode=BUILD, duration=0:00:00.181, duration_ms=181, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:34:07], mode=BUILD, duration=0:00:00.691, duration_ms=691, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:34:23], mode=BUILD, duration=0:00:00.688, duration_ms=688, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:36:36], mode=BUILD, duration=0:00:00.947, duration_ms=947, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:40:08], mode=BUILD, duration=0:00:00.258, duration_ms=258, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:40:37], mode=BUILD, duration=0:00:00.311, duration_ms=311, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:41:20], mode=BUILD, duration=0:00:00.901, duration_ms=901, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:42:36], mode=BUILD, duration=0:00:00.301, duration_ms=301, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:42:56], mode=BUILD, duration=0:00:00.685, duration_ms=685, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:43:19], mode=BUILD, duration=0:00:00.694, duration_ms=694, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:44:34], mode=BUILD, duration=0:00:00.675, duration_ms=675, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:45:17], mode=BUILD, duration=0:00:00.621, duration_ms=621, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:46:11], mode=BUILD, duration=0:00:00.622, duration_ms=622, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:46:57], mode=BUILD, duration=0:00:00.693, duration_ms=693, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:47:58], mode=BUILD, duration=0:00:00.681, duration_ms=681, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:48:56], mode=BUILD, duration=0:00:00.615, duration_ms=615, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:49:13], mode=BUILD, duration=0:00:00.699, duration_ms=699, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:51:25], mode=BUILD, duration=0:00:00.682, duration_ms=682, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:56:50], mode=WORKBENCH_START, duration=0:00:06.417, duration_ms=6417, data={}
+timestamp=[2024-08-02 15:56:50], mode=WORKBENCH_UI_INIT, duration=0:00:00.844, duration_ms=844, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,lab6EC,lab6EC_system,mb_usb_hdmi_top}
+timestamp=[2024-08-02 15:56:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.051, duration_ms=51, data={}
+timestamp=[2024-08-02 15:57:53], mode=BUILD, duration=0:00:00.722, duration_ms=722, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 15:59:48], mode=BUILD, duration=0:00:00.685, duration_ms=685, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:00:47], mode=BUILD, duration=0:00:00.687, duration_ms=687, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:05:55], mode=BUILD, duration=0:00:00.690, duration_ms=690, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:06:46], mode=BUILD, duration=0:00:00.500, duration_ms=500, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:07:00], mode=BUILD, duration=0:00:00.686, duration_ms=686, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:08:46], mode=BUILD, duration=0:00:00.681, duration_ms=681, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:12:42], mode=BUILD, duration=0:00:00.691, duration_ms=691, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:13:05], mode=BUILD, duration=0:00:00.250, duration_ms=250, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:13:41], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:13:58], mode=BUILD, duration=0:00:00.308, duration_ms=308, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:14:28], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:14:40], mode=BUILD, duration=0:00:00.690, duration_ms=690, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:17:20], mode=BUILD, duration=0:00:00.688, duration_ms=688, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:18:29], mode=BUILD, duration=0:00:00.688, duration_ms=688, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:20:22], mode=BUILD, duration=0:00:00.645, duration_ms=645, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:21:22], mode=BUILD, duration=0:00:00.615, duration_ms=615, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:21:57], mode=BUILD, duration=0:00:00.698, duration_ms=698, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:23:09], mode=BUILD, duration=0:00:00.247, duration_ms=247, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:23:52], mode=BUILD, duration=0:00:00.245, duration_ms=245, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:24:07], mode=BUILD, duration=0:00:00.693, duration_ms=693, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:24:50], mode=BUILD, duration=0:00:00.684, duration_ms=684, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:26:42], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:29:35], mode=BUILD, duration=0:00:00.704, duration_ms=704, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:30:44], mode=WORKBENCH_START, duration=0:00:05.684, duration_ms=5684, data={}
+timestamp=[2024-08-02 16:30:45], mode=WORKBENCH_UI_INIT, duration=0:00:00.657, duration_ms=657, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,lab6EC,lab6EC_system,mb_usb_hdmi_top}
+timestamp=[2024-08-02 16:30:46], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.048, duration_ms=48, data={}
+timestamp=[2024-08-02 16:31:27], mode=BUILD, duration=0:00:00.924, duration_ms=924, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:32:09], mode=BUILD, duration=0:00:00.692, duration_ms=692, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:42:25], mode=BUILD, duration=0:00:00.702, duration_ms=702, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:42:52], mode=WORKBENCH_START, duration=0:00:06.436, duration_ms=6436, data={}
+timestamp=[2024-08-02 16:42:53], mode=WORKBENCH_UI_INIT, duration=0:00:00.627, duration_ms=627, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,lab6EC,lab6EC_system,mb_usb_hdmi_top}
+timestamp=[2024-08-02 16:42:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.035, duration_ms=35, data={}
+timestamp=[2024-08-02 16:43:55], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:44:13], mode=BUILD, duration=0:00:00.700, duration_ms=700, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:49:46], mode=BUILD, duration=0:00:00.683, duration_ms=683, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:50:20], mode=BUILD, duration=0:00:00.677, duration_ms=677, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:52:42], mode=BUILD, duration=0:00:00.250, duration_ms=250, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:53:20], mode=BUILD, duration=0:00:00.339, duration_ms=339, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:54:09], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:57:57], mode=BUILD, duration=0:00:00.623, duration_ms=623, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:58:31], mode=BUILD, duration=0:00:00.618, duration_ms=618, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 16:59:20], mode=WORKBENCH_START, duration=0:00:06.239, duration_ms=6239, data={}
+timestamp=[2024-08-02 16:59:21], mode=WORKBENCH_UI_INIT, duration=0:00:00.708, duration_ms=708, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,lab6EC,lab6EC_system,mb_usb_hdmi_top}
+timestamp=[2024-08-02 16:59:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.044, duration_ms=44, data={}
+timestamp=[2024-08-02 16:59:34], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:01:40], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:02:13], mode=WORKBENCH_START, duration=0:00:07.032, duration_ms=7032, data={}
+timestamp=[2024-08-02 17:02:13], mode=WORKBENCH_UI_INIT, duration=0:00:00.699, duration_ms=699, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,lab6EC,lab6EC_system,mb_usb_hdmi_top}
+timestamp=[2024-08-02 17:02:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.038, duration_ms=38, data={}
+timestamp=[2024-08-02 17:02:23], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:03:21], mode=BUILD, duration=0:00:00.690, duration_ms=690, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:04:52], mode=BUILD, duration=0:00:00.198, duration_ms=198, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:09:00], mode=BUILD, duration=0:00:00.698, duration_ms=698, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:09:40], mode=WORKBENCH_START, duration=0:00:08.208, duration_ms=8208, data={}
+timestamp=[2024-08-02 17:09:41], mode=WORKBENCH_UI_INIT, duration=0:00:00.910, duration_ms=910, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,lab6EC,lab6EC_system,mb_usb_hdmi_top}
+timestamp=[2024-08-02 17:09:41], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.035, duration_ms=35, data={}
+timestamp=[2024-08-02 17:10:04], mode=BUILD, duration=0:00:00.727, duration_ms=727, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:16:44], mode=BUILD, duration=0:00:01.194, duration_ms=1194, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:17:53], mode=BUILD, duration=0:00:00.502, duration_ms=502, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:18:07], mode=BUILD, duration=0:00:00.692, duration_ms=692, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:20:23], mode=BUILD, duration=0:00:00.686, duration_ms=686, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:20:49], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:21:23], mode=BUILD, duration=0:00:00.687, duration_ms=687, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:22:34], mode=BUILD, duration=0:00:00.951, duration_ms=951, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:23:15], mode=BUILD, duration=0:00:00.693, duration_ms=693, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:40:59], mode=BUILD, duration=0:00:00.324, duration_ms=324, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:49:10], mode=BUILD, duration=0:00:00.330, duration_ms=330, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:49:22], mode=BUILD, duration=0:00:00.327, duration_ms=327, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:50:54], mode=BUILD, duration=0:00:00.312, duration_ms=312, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:52:17], mode=BUILD, duration=0:00:00.311, duration_ms=311, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:55:14], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:55:24], mode=BUILD, duration=0:00:00.310, duration_ms=310, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:55:42], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:57:01], mode=BUILD, duration=0:00:00.330, duration_ms=330, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:57:38], mode=BUILD, duration=0:00:00.334, duration_ms=334, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:58:11], mode=BUILD, duration=0:00:00.335, duration_ms=335, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:58:50], mode=BUILD, duration=0:00:00.336, duration_ms=336, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 17:59:48], mode=BUILD, duration=0:00:00.323, duration_ms=323, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:01:09], mode=BUILD, duration=0:00:00.442, duration_ms=442, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:01:25], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:01:37], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:01:58], mode=BUILD, duration=0:00:00.508, duration_ms=508, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:04:23], mode=BUILD, duration=0:00:00.384, duration_ms=384, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:04:47], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:06:04], mode=BUILD, duration=0:00:00.320, duration_ms=320, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:06:21], mode=BUILD, duration=0:00:00.325, duration_ms=325, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:07:40], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:08:01], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:08:14], mode=BUILD, duration=0:00:00.803, duration_ms=803, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:10:26], mode=BUILD, duration=0:00:00.825, duration_ms=825, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:13:41], mode=BUILD, duration=0:00:00.757, duration_ms=757, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:17:38], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:17:57], mode=BUILD, duration=0:00:00.706, duration_ms=706, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:18:23], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:18:48], mode=BUILD, duration=0:00:00.759, duration_ms=759, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:20:19], mode=BUILD, duration=0:00:00.750, duration_ms=750, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:20:49], mode=BUILD, duration=0:00:00.745, duration_ms=745, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:22:32], mode=BUILD, duration=0:00:00.754, duration_ms=754, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:23:01], mode=BUILD, duration=0:00:00.812, duration_ms=812, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:24:54], mode=BUILD, duration=0:00:00.766, duration_ms=766, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:26:20], mode=BUILD, duration=0:00:00.750, duration_ms=750, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:28:43], mode=BUILD, duration=0:00:00.755, duration_ms=755, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:29:22], mode=BUILD, duration=0:00:00.751, duration_ms=751, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:32:20], mode=BUILD, duration=0:00:00.307, duration_ms=307, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:32:36], mode=BUILD, duration=0:00:00.752, duration_ms=752, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 18:36:16], mode=BUILD, duration=0:00:00.745, duration_ms=745, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:06:36], mode=BUILD, duration=0:00:00.806, duration_ms=806, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:07:55], mode=BUILD, duration=0:00:00.754, duration_ms=754, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:08:04], mode=BUILD, duration=0:00:00.756, duration_ms=756, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:11:53], mode=BUILD, duration=0:00:00.811, duration_ms=811, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:12:23], mode=BUILD, duration=0:00:00.832, duration_ms=832, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:12:42], mode=BUILD, duration=0:00:00.183, duration_ms=183, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:14:41], mode=BUILD, duration=0:00:00.757, duration_ms=757, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:14:41], mode=BUILD, duration=0:00:00.130, duration_ms=130, data={name=lab6EC_system, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:24:20], mode=BUILD, duration=0:00:01.075, duration_ms=1075, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:25:04], mode=WORKBENCH_START, duration=0:00:09.392, duration_ms=9392, data={}
+timestamp=[2024-08-02 19:25:05], mode=WORKBENCH_UI_INIT, duration=0:00:01.392, duration_ms=1392, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,lab6EC,lab6EC_system,mb_usb_hdmi_top}
+timestamp=[2024-08-02 19:25:06], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.114, duration_ms=114, data={}
+timestamp=[2024-08-02 19:25:51], mode=BUILD, duration=0:00:01.829, duration_ms=1829, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:28:39], mode=BUILD, duration=0:00:01.168, duration_ms=1168, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-08-02 19:30:02], mode=BUILD, duration=0:00:00.899, duration_ms=899, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-09-15 15:19:15], mode=WORKBENCH_START, duration=0:00:07.641, duration_ms=7641, data={}
+timestamp=[2024-09-15 15:19:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.663, duration_ms=663, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,lab6EC,lab6EC_system,mb_usb_hdmi_top}
+timestamp=[2024-09-15 15:19:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.145, duration_ms=145, data={}
+timestamp=[2024-09-15 15:44:38], mode=BUILD, duration=0:00:02.067, duration_ms=2067, data={name=lab6EC, configuration=Debug, clean_build=false}
+timestamp=[2024-09-15 15:49:56], mode=BUILD, duration=0:00:00.682, duration_ms=682, data={name=lab6EC, configuration=Debug, clean_build=false}

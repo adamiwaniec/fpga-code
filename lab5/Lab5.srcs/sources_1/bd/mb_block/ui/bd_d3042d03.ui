@@ -1,0 +1,79 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.717936",
+   "Default View_TopLeft":"820,33",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 7 -x 2110 -y 350 -defaultsOSRD
+preplace port gpio_usb_int -pg 1 -lvl 7 -x 2110 -y 210 -defaultsOSRD
+preplace port gpio_usb_keycode_0 -pg 1 -lvl 7 -x 2110 -y 740 -defaultsOSRD
+preplace port gpio_usb_keycode_1 -pg 1 -lvl 7 -x 2110 -y 770 -defaultsOSRD
+preplace port gpio_usb_rst -pg 1 -lvl 7 -x 2110 -y 80 -defaultsOSRD
+preplace port HDMI_0 -pg 1 -lvl 7 -x 2110 -y 10 -defaultsOSRD
+preplace port port-id_clk_100MHz -pg 1 -lvl 0 -x -110 -y 680 -defaultsOSRD
+preplace port port-id_reset_rtl_0 -pg 1 -lvl 0 -x -110 -y 590 -defaultsOSRD
+preplace port port-id_usb_spi_mosi -pg 1 -lvl 0 -x -110 -y 460 -defaultsOSRD -left
+preplace port port-id_usb_spi_sclk -pg 1 -lvl 7 -x 2110 -y 960 -defaultsOSRD
+preplace port port-id_usb_spi_miso -pg 1 -lvl 7 -x 2110 -y 820 -defaultsOSRD -right
+preplace portBus usb_spi_ss -pg 1 -lvl 7 -x 2110 -y 1010 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -x 1570 -y 360 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 4 -x 1030 -y 720 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 4 -x 1030 -y 980 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 2 -x 230 -y 670 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 3 -x 540 -y 610 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 6 -x 1900 -y 360 -defaultsOSRD
+preplace inst gpio_usb_keycode -pg 1 -lvl 6 -x 1900 -y 750 -defaultsOSRD
+preplace inst gpio_usb_int -pg 1 -lvl 6 -x 1900 -y 220 -defaultsOSRD
+preplace inst gpio_usb_rst -pg 1 -lvl 6 -x 1900 -y 80 -defaultsOSRD
+preplace inst timer_usb_axi -pg 1 -lvl 6 -x 1900 -y 550 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -x 540 -y 900 -defaultsOSRD
+preplace inst spi_usb -pg 1 -lvl 6 -x 1900 -y 1100 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -x 1030 -y 50 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -x 1570 -y 30 -defaultsOSRD
+preplace inst hdmi_text_controller_0 -pg 1 -lvl 1 -x 40 -y 10 -defaultsOSRD
+preplace netloc axi_uartlite_0_interrupt 1 2 5 370 810 710J 850 NJ 850 NJ 850 2040
+preplace netloc clk_100MHz_1 1 0 2 NJ 680 N
+preplace netloc clk_wiz_1_locked 1 2 1 330 650n
+preplace netloc gpio_usb_int_ip2intc_irpt 1 2 5 350 790 730J 840 NJ 840 NJ 840 2050
+preplace netloc mdm_1_debug_sys_rst 1 1 4 140 600 330 510 NJ 510 1260
+preplace netloc microblaze_0_Clk 1 0 6 -70 500 N 500 320 500 760 140 1330 640 1760
+preplace netloc reset_rtl_0_1 1 0 3 NJ 590 N 590 NJ
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 3 1 770 80n
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 6 -60 740 N 740 N 740 740 830 1320J 650 1770
+preplace netloc spi_usb_io0_o 1 0 7 -90 490 N 490 N 490 N 490 1290 670 N 670 2030J
+preplace netloc spi_usb_ip2intc_irpt 1 2 5 360 800 720J 860 NJ 860 NJ 860 2020
+preplace netloc spi_usb_sck_o 1 6 1 2070J 960n
+preplace netloc spi_usb_ss_o 1 6 1 2080 1010n
+preplace netloc timer_usb_axi_interrupt 1 2 5 340 -60 NJ -60 NJ -60 NJ -60 2060
+preplace netloc usb_spi_miso_1 1 6 1 2060 820n
+preplace netloc microblaze_0_intr 1 3 1 750 730n
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 3 2 740 -50 1340J
+preplace netloc axi_uartlite_0_UART 1 6 1 NJ 350
+preplace netloc gpio_usb_int_GPIO 1 6 1 NJ 210
+preplace netloc gpio_usb_keycode_GPIO 1 6 1 NJ 740
+preplace netloc gpio_usb_keycode_GPIO2 1 6 1 2080J 760n
+preplace netloc gpio_usb_rst_GPIO 1 6 1 NJ 80
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 1750 200n
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 1780 330n
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 5 1 1750 350n
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 5 1 1730 60n
+preplace netloc microblaze_0_axi_periph_M05_AXI 1 5 1 1730 390n
+preplace netloc microblaze_0_axi_periph_M06_AXI 1 5 1 1740 410n
+preplace netloc microblaze_0_intc_axi 1 3 3 780 610 1300J 630 1720
+preplace netloc microblaze_0_dlmb_1 1 4 1 1310 0n
+preplace netloc microblaze_0_ilmb_1 1 4 1 1320 20n
+preplace netloc microblaze_0_axi_dp 1 4 1 1310 70n
+preplace netloc microblaze_0_interrupt 1 3 2 780 -40 1280
+preplace netloc microblaze_0_debug 1 3 2 780 150 1270
+preplace netloc microblaze_0_axi_periph_M07_AXI 1 0 6 -80 480 NJ 480 NJ 480 NJ 480 1310J 620 1710
+preplace netloc hdmi_text_controller_0_HDMI 1 1 6 140J -70 NJ -70 NJ -70 NJ -70 NJ -70 2080J
+levelinfo -pg 1 -110 40 230 540 1030 1570 1900 2110
+pagesize -pg 1 -db -bbox -sgen -250 -80 2290 1350
+"
+}
+{
+   "da_axi4_cnt":"8",
+   "da_board_cnt":"10",
+   "da_mb_cnt":"2"
+}

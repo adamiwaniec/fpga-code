@@ -1,0 +1,46 @@
+15:49:56 **** Incremental Build of configuration Debug for project lab6EC ****
+make all 
+'Building file: ../src/hdmi_text_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IC:/Users/Adam/Vivado_Projects/Lab5/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
+In file included from ../src/hdmi_text_controller.h:8,
+                 from ../src/hdmi_text_controller.c:7:
+C:/Users/Adam/Vivado_Projects/Lab5/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include/xparameters.h:627:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  627 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A10000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:99:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   99 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
+../src/hdmi_text_controller.c:382:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  382 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                             ~^                                  ~~~~~~~~~~~
+      |                                              |                                          |
+      |                                              unsigned int                               uint32_t {aka long unsigned int}
+      |                                             %lx
+../src/hdmi_text_controller.c:382:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  382 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+      |                                                                     ~^                       ~~~~~~~~~~
+      |                                                                      |                              |
+      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
+      |                                                                     %lx
+../src/hdmi_text_controller.c: In function 'pick_dir':
+../src/hdmi_text_controller.c:149:1: warning: control reaches end of non-void function [-Wreturn-type]
+  149 | }
+      | ^
+'Finished building: ../src/hdmi_text_controller.c'
+' '
+'Building target: lab6EC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Adam/Vivado_Projects/Lab5/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab6EC.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/lw_usb_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab6EC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab6EC.elf  |tee "lab6EC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28280	    504	   3712	  32496	   7ef0	lab6EC.elf
+'Finished building: lab6EC.elf.size'
+' '
+
+15:49:56 Build Finished (took 679ms)
+

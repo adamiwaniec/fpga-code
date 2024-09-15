@@ -1,0 +1,6 @@
+19:14:41 **** Build of configuration Debug for project lab6EC_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+19:14:41 Build Finished (took 121ms)
+

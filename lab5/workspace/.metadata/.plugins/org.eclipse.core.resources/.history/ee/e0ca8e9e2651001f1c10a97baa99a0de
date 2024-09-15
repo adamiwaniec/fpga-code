@@ -1,0 +1,371 @@
+
+
+
+
+
+/***************************** Include Files *******************************/
+#include "hdmi_text_controller.h"
+#include "stdio.h"
+#include "string.h"
+#include "sleep.h"
+#include "stdlib.h"
+//#include "lw_usb_main.c"
+
+/************************** Function Definitions ***************************/
+
+#define UP 			1
+#define DOWN 		-1
+#define LEFT 		2
+#define RIGHT 		-2
+
+#define EMPTY		' '
+#define DOT			'.'
+
+#define STARTROW 	(ROWS-12)/2
+#define STARTCOL	(COLUMNS-40)/2
+
+static int dotCount = 0;
+
+//static int seed_counter = 0;
+
+static int pacmanX;
+static int pacmanY;
+
+static int ghost1X;
+static int ghost1Y;
+static int ghost1dir; 		//direction ghost is currently heading
+static char ghost1tile; 	//check if tile under ghost is DOT or EMPTY
+
+static int ghost2X;
+static int ghost2Y;
+static int ghost2dir; 		//direction ghost is currently heading
+static char ghost2tile; 	//check if tile under ghost is DOT or EMPTY
+
+void init_pacman()
+{
+	hdmiSetColor(DK_BLU, LIGHT_BLU);
+	hdmiClr();
+
+	//draw walls for pac-man
+	char walls[12][40] = {
+	        "########################################",
+	        "#....................##................#",
+	        "#.####.#####.#######.##.#######.######.#",
+	        "#.####.#####.#######.##.#######.######.#",
+	        "#......................................#",
+	        "#.####.##.###############.############.#",
+	        "#.####.##.###############.############.#",
+	        "#......................................#",
+	        "#.############.#######.##.############.#",
+	        "#.############.#######.##.############.#",
+	        "#......................................#",
+	        "########################################",
+	};
+
+
+
+	for (int i = 0; i < 12; i++) {
+	    memcpy((void*)&hdmi_ctrl->VRAM[(STARTROW + i) * COLUMNS + STARTCOL], walls[i], 40);
+	}
+
+	int dC = 0;
+		    for (int i = 0; i < ROWS * COLUMNS; i++) {
+		        if (hdmi_ctrl->VRAM[i] == '.') {
+		            dC++;
+		        }
+		    }
+		    xil_printf("\n HERE %d\n", dC);
+
+	ghost1X = STARTCOL+30;
+	ghost1Y = STARTROW + 1;
+	ghost1dir = LEFT;
+	ghost1tile = DOT;
+	hdmi_ctrl->VRAM[(ghost1Y) * COLUMNS + ghost1X] = 'G'; //initialize ghost1
+
+	ghost2X = STARTCOL+6;
+	ghost2Y = STARTROW + 10;
+	ghost2dir = RIGHT;
+	ghost2tile = DOT;
+	hdmi_ctrl->VRAM[(ghost2Y) * COLUMNS + ghost2X] = 'G'; //initialize ghost2
+
+	pacmanX = STARTCOL+20;
+	pacmanY = STARTROW + 7;
+	hdmi_ctrl->VRAM[(pacmanY) * COLUMNS + pacmanX] = 'P'; //initialize pacman
+	sleep_MB(7);
+	update_ghosts();
+}
+
+bool is_wall(int x, int y, int new_dir){	//given current position, is tile in the new direction a wall
+	switch (new_dir){
+		case 1: //UP
+			if (hdmi_ctrl->VRAM[(y-1) * COLUMNS + x] == '#'){return true;}
+			break;
+
+		case -1: //DOWN
+			if (hdmi_ctrl->VRAM[(y+1) * COLUMNS + x] == '#'){return true;}
+			break;
+
+		case 2: //LEFT
+			if (hdmi_ctrl->VRAM[y * COLUMNS + (x-1)] == '#'){return true;}
+			break;
+
+		case -2: //RIGHT
+			if (hdmi_ctrl->VRAM[y * COLUMNS + (x+1)] == '#'){return true;}
+			break;
+
+		default: return false;
+	}
+	return false;
+}
+
+int new_direction(int curr_dir, int ghostX, int ghostY) {
+    int directions[3];
+    switch (curr_dir) {
+        case UP:
+            directions[0] = RIGHT;
+            directions[1] = LEFT;
+            directions[2] = UP;
+            break;
+        case DOWN:
+            directions[0] = LEFT;
+            directions[1] = RIGHT;
+            directions[2] = DOWN;
+            break;
+        case LEFT:
+            directions[0] = UP;
+            directions[1] = DOWN;
+            directions[2] = LEFT;
+            break;
+        case RIGHT:
+            directions[0] = DOWN;
+            directions[1] = UP;
+            directions[2] = RIGHT;
+            break;
+    }
+
+    for (int i = 0; i < 3; i++) {
+        if (!is_wall(ghostX, ghostY, directions[i])) {
+            return directions[i];
+        }
+    }
+    return curr_dir; // If all directions are blocked, keep current direction
+}
+
+void update_ghosts() {
+    // Ghost1 movement
+    int direction1 = new_direction(ghost1dir, ghost1X, ghost1Y);
+
+    hdmi_ctrl->VRAM[ghost1Y * COLUMNS + ghost1X] = ghost1tile;
+    switch (direction1) {
+        case UP:
+            ghost1Y--;
+            break;
+        case DOWN:
+            ghost1Y++;
+            break;
+        case LEFT:
+            ghost1X--;
+            break;
+        case RIGHT:
+            ghost1X++;
+            break;
+    }
+    ghost1tile = hdmi_ctrl->VRAM[ghost1Y * COLUMNS + ghost1X];
+    hdmi_ctrl->VRAM[ghost1Y * COLUMNS + ghost1X] = 'G';
+    ghost1dir = direction1;
+
+    // Ghost2 movement
+    int direction2 = new_direction(ghost2dir, ghost2X, ghost2Y);
+
+    hdmi_ctrl->VRAM[ghost2Y * COLUMNS + ghost2X] = ghost2tile;
+    switch (direction2) {
+        case UP:
+            ghost2Y--;
+            break;
+        case DOWN:
+            ghost2Y++;
+            break;
+        case LEFT:
+            ghost2X--;
+            break;
+        case RIGHT:
+            ghost2X++;
+            break;
+    }
+    ghost2tile = hdmi_ctrl->VRAM[ghost2Y * COLUMNS + ghost2X];
+    hdmi_ctrl->VRAM[ghost2Y * COLUMNS + ghost2X] = 'G';
+    ghost2dir = direction2;
+}
+
+void update_pacman(unsigned char * keycodes) {
+    //LEFT == 400000
+    //RIGHT == 700000
+    //UP == 1A0000
+    //DOWN == 160000
+
+    int newX = pacmanX;
+    int newY = pacmanY;
+
+    switch (keycodes[0]) {
+    	case 0x50: //LEFT
+    		newX = pacmanX - 1;
+    		break;
+
+        case 0x4F: //RIGHT
+        	newX = pacmanX + 1;
+        	break;
+
+        case 0x52: //UP
+            newY = pacmanY - 1;
+            break;
+
+        case 0x51: //DOWN
+            newY = pacmanY + 1;
+            break;
+
+    }
+
+    if (hdmi_ctrl->VRAM[newY * COLUMNS + newX] == 'G') {
+        	trigger_loss();
+    }
+
+    //check if the new position is a wall
+    if (hdmi_ctrl->VRAM[newY * COLUMNS + newX] != '#') {
+        hdmi_ctrl->VRAM[pacmanY * COLUMNS + pacmanX] = EMPTY;
+        pacmanX = newX;
+        pacmanY = newY;
+        hdmi_ctrl->VRAM[pacmanY * COLUMNS + pacmanX] = 'P';
+
+        // Check if Pac-Man eats a dot
+        if (hdmi_ctrl->VRAM[newY * COLUMNS + newX] == DOT) {
+        	dotCount--;
+            if (dotCount == 0) {
+            	trigger_win();
+            	sleep_MB(10);
+            	return;
+            }
+        }
+    }
+}
+
+
+void trigger_loss(){
+	hdmiClr();
+	char loss[9] = {"You lose."};
+	memcpy((void*)&hdmi_ctrl->VRAM[0], loss, sizeof(loss));
+}
+
+void trigger_win(){
+	hdmiClr();
+	char win[8] = {"You win!"};
+	memcpy((void*)&hdmi_ctrl->VRAM[0], win, sizeof(win));
+	sleep_MB(1000);
+}
+
+
+void hdmiSetColor(int background, int foreground)
+{
+	hdmi_ctrl->CTRL = foreground << 13 |
+					  background << 1;
+}
+
+void hdmiClr()
+{
+	for (int i = 0; i<(ROWS*COLUMNS); i++)
+	{
+		hdmi_ctrl->VRAM[i] = 0x00;
+	}
+}
+
+void hdmiTestWeek1()
+{
+	hdmiSetColor(BLACK, WHITE);
+	hdmiClr();
+
+	//Register write and readback test
+	uint32_t checksum[ROWS], readsum[ROWS];
+
+	for (int j = 0; j < ROWS; j++)
+	{
+		checksum[j] = 0;
+		for (int i = 0; i < COLUMNS; i++)
+		{
+			hdmi_ctrl->VRAM[j*COLUMNS + i] = i + j;
+			checksum[j] += i + j;
+		}
+	}
+	
+	for (int j = 0; j < ROWS; j++)
+	{
+		readsum[j] = 0;
+		for (int i = 0; i < COLUMNS; i++)
+		{
+			readsum[j] += hdmi_ctrl->VRAM[j*COLUMNS + i];
+			//printf ("%x \n\r", hdmi_ctrl->VRAM[j*COLUMNS + i]);
+		}
+		printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
+		if (checksum[j] != readsum[j])
+		{
+			printf ("Checksum mismatch!, check your Avalon-MM code\n\r");
+			while (1){};
+		}
+	}
+	
+	printf ("Checksum code passed!...starting color test \n\r");
+	sleep_MB (5);
+	hdmiSetColor(DIM_GRN, BRIGHT_GRN);
+	hdmiClr();
+	char greentest[] = "This text should draw in green";
+	{
+		for (int j = 0; j < ROWS; j++)
+		{
+			memcpy((void*)&hdmi_ctrl->VRAM[j*COLUMNS]+j,greentest, sizeof(greentest));
+		}
+	}
+	sleep_MB (5);
+	hdmiSetColor(DIM_RED, BRIGHT_RED);
+	hdmiClr();
+	char redtest[] = "This text should draw in red";
+	{
+		for (int j = 0; j < ROWS; j++)
+		{
+			memcpy((void*)&hdmi_ctrl->VRAM[j*COLUMNS]+(ROWS-j),redtest, sizeof(redtest));
+		}
+	}
+	sleep_MB (5);
+	hdmiSetColor(DIM_BLU, BRIGHT_BLU);
+	hdmiClr();
+	char blutest[] = "This text should draw in blue";
+	{
+		for (int j = 0; j < ROWS; j++)
+		{
+			memcpy((void*)&hdmi_ctrl->VRAM[j*COLUMNS],blutest, sizeof(blutest));
+		}
+	}
+	sleep_MB (5);
+	hdmiClr();
+	char inverted[] = "This text should draw inverted";
+	for (int i = 0; i < sizeof(inverted); i++)
+		inverted[i] |= 0x80;
+
+	hdmiSetColor(DIM_GRN, BRIGHT_GRN);
+	{
+		for (int j = 0; j < ROWS; j++)
+		{
+			if (j%2==0)
+				memcpy((void*)&hdmi_ctrl->VRAM[j*COLUMNS]+j,greentest, sizeof(greentest));
+			else
+				memcpy((void*)&hdmi_ctrl->VRAM[j*COLUMNS]+j,inverted, sizeof(inverted));
+		}
+	}
+	sleep_MB (5);
+
+	hdmiSetColor(BLACK, WHITE);
+	hdmiClr();
+
+	char completed[] = "All visual tests completed, verify on-screen results are correct.";
+	memcpy((void*)&hdmi_ctrl->VRAM[0],completed, sizeof(completed));
+	printf( "%s \n\r", completed);
+
+	sleep_MB (10);
+}
